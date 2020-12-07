@@ -1,0 +1,34 @@
+.Song {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 20%;
+    border-radius: 50%;
+    &.rotate {
+      animation: rotate 30s linear infinite;
+    }
+  }
+  h2 {
+    padding: 1.5em 0.5em 0.5em 0.5em;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+// @keyframes rotate {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+@media screen and (max-width: 768px) {
+  .Song img {
+    width: 45%;
+  }
+}
