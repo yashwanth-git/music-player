@@ -20,6 +20,10 @@
   }
   p {
     padding: 1em;
+    display: flex;
+    width: 6rem;
+    align-items: center;
+    justify-content: center;
   }
 }
 .play--control {

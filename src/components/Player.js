@@ -83,7 +83,7 @@ const Player = ({
   return (
     <div className="Player">
       <div className="time--control">
-        <p>{getTime(songInfo.currentTime)}</p>
+        <p><span>{getTime(songInfo.currentTime)}</span></p>
         <div style={trackBg} className="track">
           <input
             type="range"
@@ -94,7 +94,7 @@ const Player = ({
           />
           <div style={trackAnim} className="animate-track"></div>
         </div>
-        <p>{songInfo.duration ? getTime(songInfo.duration) : "0:00"}</p>
+        <p><span>{songInfo.duration ? getTime(songInfo.duration) : "0:00"}</span></p>
       </div>
       <div className="play--control">
         <FontAwesomeIcon
